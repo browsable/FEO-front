@@ -1,0 +1,37 @@
+.InputURL {
+  padding: 50px;
+  font-family: "sans-serif";
+  font-size: 20px;
+  display: inline-flex;
+  line-height: 30px;
+}
+.text{
+  font-size: 22px;
+  margin-right: 10px;
+
+}
+.input{
+  font-size: 20px;
+}
+$buttonColor: #2ecc71;
+$buttonDark: darken($buttonColor, 10%);
+$buttonDarker: darken($buttonDark, 10%);
+.button{
+  background: $buttonColor;
+  border-radius: 3px;
+  box-shadow: 0px 5px 0px $buttonDark;
+  border: 0;
+  color: white;
+  font-size: 17px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0;
+  &:hover {
+    background: $buttonDark;
+    box-shadow: 0px 5px 0px $buttonDarker;
+  }
+  &:active {
+    box-shadow: none;
+    margin-top: 5px;
+  }
+}
